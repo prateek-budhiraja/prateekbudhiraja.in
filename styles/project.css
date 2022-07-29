@@ -16,17 +16,19 @@
   color: #fff;
 }
 
-.project-card button {
+.project-card .button {
+  text-decoration: none;
   background-color: var(--purple);
   color: #fff;
   border: 2px solid var(--purple);
-  padding: 10px 20px;
+  padding: 8px 14px;
   border-radius: 14px;
-  margin-right: 10px;
   cursor: pointer;
+  margin-right: 8px;
+  display: inline-block;
 }
 
-.project-card button:hover {
+.project-card .button:hover {
   background-color: transparent;
   border: 2px solid var(--purple);
 }
