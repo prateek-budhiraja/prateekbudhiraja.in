@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.main h1 {
+  margin-bottom: 0px;
+  font-size: 1.8rem;
+}
+
+.colors {
+  transition: all 0.4s;
+  animation: 10s ease 0s infinite alternate none running rainbow;
+}
+
+.main h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.main .socials {
+  display: flex;
+  gap: 2em;
+}
+
+.main .socials i {
+  font-size: 1.5rem;
+}
+
+.main a {
+  color: var(--purple);
+}
+
+.main a:hover {
+  color: var(--bluish);
+}
