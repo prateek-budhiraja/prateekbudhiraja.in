@@ -13,7 +13,13 @@
 }
 
 .project-card h2 {
+  cursor: default;
   color: #fff;
+}
+
+.project-card h2:hover {
+  transition: all 0.4s;
+  animation: 10s ease 0s infinite alternate none running rainbow;
 }
 
 .project-card .button {
