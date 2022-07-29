@@ -44,6 +44,22 @@ nav ul a {
   color: #fff;
 }
 
+nav ul a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms;
+  background-color: var(--bluish);
+}
+
+nav ul a:hover:after {
+  top: 0%;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -82,21 +98,15 @@ nav ul a {
   font-size: 1.5rem;
 }
 
-a:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 60%;
-  left: -0.1em;
-  right: -0.1em;
-  bottom: 0;
-  transition: top 200ms;
-  background-color: var(--bluish);
+.main a {
+  color: var(--purple);
 }
 
-a:hover:after {
-  top: 0%;
+.main a:hover {
+  color: var(--bluish);
 }
+
+
 
 @media screen and (min-width: 800px) {
   body {
