@@ -63,6 +63,19 @@ h1 {
   font-size: 1.8rem;
 }
 
+.heading h1 {
+  text-align: center;
+}
+
+div.rule {
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 2px;
+  background-color: var(--purple);
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 800px) {
   body {
     padding: 10px 30px;
