@@ -1,15 +1,104 @@
-      a:after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 60%;
-        left: -0.1em;
-        right: -0.1em;
-        bottom: 0;
-        transition: top 200ms;
-        background-color: #395B64;
-      }
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 
-      a:hover:after {
-        top: 0%;
-      }
+:root {
+  --bg: #1B2430;
+  --purple: #7A86B6;
+  --bluish: #A5C9CA;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  padding: 0px;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--purple);
+}
+
+nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav .brand {
+  font-weight: 700;
+  color: #fff;
+}
+
+nav .brand span {
+  color: var(--bluish);
+}
+
+nav ul {
+
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+}
+
+nav ul a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.main h1 {
+  margin-bottom: 0px;
+}
+
+.main h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.main .socials {
+  display: flex;
+  gap: 2em;
+}
+
+.main .socials i {
+  font-size: 1.5rem;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms;
+  background-color: #395B64;
+}
+
+a:hover:after {
+  top: 0%;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 10px 30px;
+  }
+
+  nav ul {
+    gap: 3em;
+  }
+}
