@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato");
+
+:root {
+  --bg: #1B2430;
+  --bluish: #395B64;
+  --white: #E9D5DA;
+}
+
+body {
+  background: var(--bg);
+}
+
+.top {
+  margin-top: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: -40px;
+}
+
+.ghost {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: var(--white);
+  border: 1px solid var(--white);
+  border-bottom: none;
+  -webkit-animation: float 2s ease-out infinite;
+  animation: float 2s ease-out infinite;
+}
+
+.ghost-copy {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: var(--white);
+  border: 1px solid var(--white);
+  border-bottom: none;
+  -webkit-animation: float 2s ease-out infinite;
+  animation: float 2s ease-out infinite;
+  z-index: 0;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+}
+
+.eye,
+.eye-right {
+  position: absolute;
+  background: var(--bg);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+}
+
+.eye {
+  left: 25%;
+}
+
+.eye-right {
+  right: 25%;
+}
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: transparent var(--bg) var(--bg) transparent;
+  transform: rotate(45deg);
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  background: var(--white);
+  top: 85%;
+  width: 25%;
+  height: 23%;
+  border: 1px solid var(--white);
+  z-index: 0;
+}
+
+.one {
+  border-radius: 0 0 100% 30%;
+  left: -1px;
+}
+
+.two {
+  left: 23%;
+  border-radius: 0 0 50% 50%;
+}
+
+.three {
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+}
+
+.four {
+  left: 74.5%;
+  border-radius: 0 0 30% 100%;
+}
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  background: var(--white);
+  left: 35%;
+  top: 80%;
+  border-radius: 50%;
+  -webkit-animation: scale 2s infinite;
+  animation: scale 2s infinite;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes float {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.bottom {
+  margin-top: 10px;
+}
+
+/*text styling*/
+h1 {
+  font-family: "Abril Fatface", serif;
+  color: var(--white);
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+  text-shadow: -1px 0 var(--bluish), 0 1px var(--bluish), 1px 0 var(--bluish), 0 -1px var(--bluish);
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  margin-top: -20px;
+  font-weight: 500;
+}
+
+p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: var(--white);
+  font-size: 0.6em;
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  background: var(--white);
+  padding: 15px 20px;
+  margin: 5px;
+  color: var(--bg);
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: var(--bluish);
+  transition: all 0.4s ease-out;
+  color: var(--white);
+}
+
+a {
+  cursor: default;
+}
