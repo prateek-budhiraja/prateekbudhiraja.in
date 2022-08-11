@@ -3,6 +3,10 @@
 		{
 			"source": "/apple",
 			"destination": "https://medium.com/@akisrivastava22"
+		},
+		{
+			"source": "/blog",
+			"destination": "https://blog.prateekbudhiraja.in/"
 		}
 	]
 }
